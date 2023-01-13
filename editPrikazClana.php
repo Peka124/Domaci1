@@ -36,17 +36,17 @@
         </div>
 
         <div class="form-group mt-3">
-            <label class="form-label">Username </label>
+            <label class="form-label">Korisnicko ime </label>
             <input type="text" class="form-control" name="username" value="<?php echo $clan->username ?>">
         </div>
 
         <div class="form-group mt-3">
-            <label class="form-label">Password </label>
+            <label class="form-label">Lozinka </label>
             <input type="password" class="form-control" name="password" value="<?php echo $clan->password ?>">
         </div>
 
         <div class="form-group mt-3">
-            <label class="form-label">Email </label>
+            <label class="form-label">Mejl </label>
             <input type="email" class="form-control" name="email" value="<?php echo $clan->email ?>">
         </div>
 

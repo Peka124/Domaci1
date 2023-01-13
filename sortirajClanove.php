@@ -9,16 +9,6 @@ $connection = new mysqli($hostName, $username, $password, $dbname);
 $kolona = $_POST['KolonaSort'];
 $sort = $_POST['Sort'];
 
-if(!isset($_POST['KolonaSort']))
-{
-    echo "<script type='text/javascript'>
-        alert('Niste uneli tacne podatke za sortiranje');
-        location='prikazClanova.php';</script>";
-}
-else
-{
-
-
 $sqlQuery = "SELECT c.id as clanId, c.ime, c.prezime, c.username, c.email, t.naziv, t.clanarina, t.trajanje
          FROM clan c JOIN tip t ON c.tip_id=t.id ORDER BY $kolona $sort";
 
@@ -47,6 +37,5 @@ for ($i = 0; $i < count($clanovi); $i++)
     <tr>
 
     <?php
-}
 }
     ?>

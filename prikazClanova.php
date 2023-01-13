@@ -28,7 +28,7 @@
         </div>
 
         <div id="div-sortiraj">
-            <label>Sortiraj:</label>
+            <label style="background-color: darkolivegreen;">Sortiraj:</label>
             <select class="form-select" id="selKolona">
                 <option>Izaberi</option>
                 <option value="ime">Ime</option>
@@ -56,7 +56,7 @@
             <tr>
                 <th>Ime</th>
                 <th>Prezime</th>
-                <th>Username</th>
+                <th>Korisnicko ime</th>
                 <th>Tip</th>
                 <th>Trajanje</th>
                 <th>Clanarina</th>
