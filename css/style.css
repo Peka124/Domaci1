@@ -1,0 +1,80 @@
+.login {
+  background-image: url("../slike/Login2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pocetna {
+  background-image: url("../slike/Login1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-left {
+  padding: 10px;
+  border: 5px solid black;
+  background-color: darkolivegreen;
+}
+
+#pocetna-nav {
+  margin-left: 540%;
+}
+
+#dodajClanaForma {
+  margin-top: 3%;
+  width: 40%;
+  margin-left: 32%;
+}
+
+#dodajClanaBtn,
+#izmeniClanaBtn {
+  width: 45%;
+  margin-top: 1%;
+  margin-left: 2%;
+}
+
+#forma-naslov {
+  background-color: darkolivegreen;
+  text-align: center;
+  width: 40%;
+  margin-top: 2%;
+  margin-left: 32%;
+  border: 3px solid black;
+}
+
+#forma-naslov:hover {
+  opacity: 0.7;
+  border-radius: 5px;
+}
+
+.nav-elementi {
+  display: flex;
+}
+
+#korisnici-tabela {
+  background-color: darkolivegreen;
+  width: 50%;
+  margin-left: 28%;
+  margin-top: 1%;
+  border: 4px solid black;
+}
+
+#div-pretrazi {
+  margin-left: 28%;
+  margin-top: 2%;
+}
+
+.pre-sor-div {
+  display: flex;
+}
+
+#div-sortiraj {
+  margin-left: 28%;
+}
+
+#selKolona,
+#selSort {
+  width: 200%;
+}
