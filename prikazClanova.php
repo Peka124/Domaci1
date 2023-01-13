@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Registracija | Forum | ITEH</title>
+    <title>Clanovi</title>
 </head>
 
-<body>
+<body class="pocetna">
 
     <?php
     include 'navbar.php';
@@ -24,7 +24,7 @@
         <div id="div-pretrazi">
             <label>Pretraži:</label>
             <input type="text" class="form-control" id="txtPretraga">
-            <button class="btn btn-primary mt-2" id="pretraziBtn">Pretraži</button>
+            <button class="btn btn-success mt-2" id="pretraziBtn">Pretraži</button>
         </div>
 
         <div id="div-sortiraj">
@@ -42,11 +42,13 @@
                 <option value="asc">Rastuće</option>
                 <option value="desc">Opadajuće</option>
             </select>
-            <button class="btn btn-primary mt-2" id="sortBtn">Sortiraj</button>
+            <button class="btn btn-success mt-2" id="sortBtn">Sortiraj</button>
 
         </div>
 
     </div>
+
+
 
 
     <table id="korisnici-tabela" class="table table-bordered table-striped text-center">
@@ -68,7 +70,8 @@
             $clan = new Clan(null, null, null, null, null, null);
             $sviClanovi = $clan->vratiSveClanove();
 
-            for ($i = 0; $i < count($sviClanovi); $i++) :
+            for ($i = 0; $i < count($sviClanovi); $i++)
+            {
             ?>
 
                 <tr>
@@ -84,10 +87,11 @@
                 <tr>
 
                 <?php
-            endfor;
+            }
                 ?>
         </tbody>
     </table>
+
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

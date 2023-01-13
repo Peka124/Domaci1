@@ -29,7 +29,7 @@ class Clan
         $dbname = "teretana";
         $connection = new mysqli($hostName, $username, $password, $dbname);
 
-        $sqlQuery = "SELECT c.id as clanId, c.ime, c.prezime, c.username, c.email, t.naziv, t.naknada, t.trajanje
+        $sqlQuery = "SELECT c.id as clanId, c.ime, c.prezime, c.username, c.email, t.naziv, t.clanarina, t.trajanje
          FROM clan c JOIN tip t ON c.tip_id=t.id";
         $result = $connection->query($sqlQuery);
         $clanovi = [];

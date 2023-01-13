@@ -10,7 +10,7 @@
     <title>Registracija | Forum | ITEH</title>
 </head>
 
-<body>
+<body class="login">
 
     <?php
     include 'navbar.php';
@@ -18,37 +18,37 @@
     include 'domen/Clan.php';
     ?>
 
-    <h2 class="text-center" id="forma-naslov">Forma za registraciju</h2>
+    <h2 class="text-center" id="forma-naslov"><b>Forma za registraciju</b></h2>
 
-    <form method="post" id="dodajClanaForma" class="text-center">
+    <form method="post" id="dodajClanaForma" class="text-left">
 
         <div class="form-group mt-3">
-            <label class="form-label">Ime </label>
+            <label class="form-label"><b>Ime </b></label>
             <input type="text" class="form-control" name="ime">
         </div>
 
         <div class="form-group mt-3">
-            <label class="form-label">Prezime </label>
+            <label class="form-label"><b>Prezime </b></label>
             <input type="text" class="form-control" name="prezime">
         </div>
 
         <div class="form-group mt-3">
-            <label class="form-label">Username </label>
+            <label class="form-label"><b>Korisnicko ime </b></label>
             <input type="text" class="form-control" name="username">
         </div>
 
         <div class="form-group mt-3">
-            <label class="form-label">Password </label>
+            <label class="form-label"><b>Lozinka </b></label>
             <input type="password" class="form-control" name="password">
         </div>
 
         <div class="form-group mt-3">
-            <label class="form-label">Email </label>
+            <label class="form-label"><b>Email </b></label>
             <input type="email" class="form-control" name="email">
         </div>
 
         <div class="form-group mt-3 mb-3">
-            <label class="form-label">Tip </label>
+            <label class="form-label"><b>Tip </b></label>
             <select class="form-select text-center" name="tip">
                 <?php
                 $tip = new Tip();
@@ -62,8 +62,8 @@
                 ?>
             </select>
         </div>
-
-        <button type="submit" id="dodajClanaBtn" name="dodajClanaBtn" class="btn btn-primary">Sačuvaj</button>
+        
+        <button type="submit" id="dodajClanaBtn" name="dodajClanaBtn" class="btn btn-success">Sačuvaj</button>
     </form>
 
     <?php

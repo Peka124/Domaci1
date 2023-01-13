@@ -4,7 +4,7 @@ class Tip
 {
     public $id;
     public $naziv;
-    public $naknada;
+    public $clanarina;
     public $trajanje;
 
 
@@ -26,3 +26,5 @@ class Tip
         return $tipovi;
     }
 }
+
+?>
