@@ -9,10 +9,15 @@ $connection = new mysqli($hostName, $username, $password, $dbname);
 $kolona = $_POST['KolonaSort'];
 $sort = $_POST['Sort'];
 
-if($kolona==null || $sort==null)
+if(!isset($_POST['KolonaSort']))
 {
-    dead
+    echo "<script type='text/javascript'>
+        alert('Niste uneli tacne podatke za sortiranje');
+        location='prikazClanova.php';</script>";
 }
+else
+{
+
 
 $sqlQuery = "SELECT c.id as clanId, c.ime, c.prezime, c.username, c.email, t.naziv, t.clanarina, t.trajanje
          FROM clan c JOIN tip t ON c.tip_id=t.id ORDER BY $kolona $sort";
@@ -36,8 +41,12 @@ for ($i = 0; $i < count($clanovi); $i++)
         <td><?php echo $clanovi[$i]->trajanje ?></td>
         <td><?php echo $clanovi[$i]->clanarina . " RSD" ?></td>
         <td><?php echo ""?></td>
+        <!-- <td><a href="brisanjeClana.php?clanId=<?php echo $clanovi[$i]->clanId ?>"><button class="btn btn-primary" id="obrisi-button" value="<?php echo $sviClanovi[$i]->clanId; ?>">Obriši</button></a>
+            <a href="editPrikazClana.php?clanId=<?php echo $clanovi[$i]->clanId ?>"><button class="btn btn-dark" id="izmeni-button" value="<?php echo $sviClanovi[$i]->clanId; ?>">Izmeni</button></a>
+        </td> -->
     <tr>
 
     <?php
+}
 }
     ?>

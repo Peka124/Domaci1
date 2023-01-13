@@ -31,6 +31,9 @@ for ($i = 0; $i < count($clanovi); $i++)
         <td><?php echo $clanovi[$i]->trajanje ?></td>
         <td><?php echo $clanovi[$i]->clanarina . " RSD" ?></td>
         <td><?php echo ""?></td>
+        <!-- <td><a href="brisanjeClana.php?clanId=<?php echo $clanovi[$i]->clanId ?>"><button class="btn btn-primary" id="obrisi-button" value="<?php echo $sviClanovi[$i]->clanId; ?>">Obriši</button></a>
+            <a href="editPrikazClana.php?clanId=<?php echo $clanovi[$i]->clanId ?>"><button class="btn btn-dark" id="izmeni-button" value="<?php echo $sviClanovi[$i]->clanId; ?>">Izmeni</button></a>
+        </td> -->
     <tr>
 
     <?php

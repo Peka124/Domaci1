@@ -65,7 +65,7 @@ class Clan
         $dbname = "teretana";
         $connection = new mysqli($hostName, $username, $password, $dbname);
 
-        $sqlQuery = "ISERT INTO clan (ime, prezime, username, password, email, tip_id) 
+        $sqlQuery = "INSERT INTO clan (ime, prezime, username, password, email, tip_id) 
         values ('$clan->ime', '$clan->prezime', '$clan->username', '$clan->password', '$clan->email', '$clan->tip_id')";
 
         $connection->query($sqlQuery);
