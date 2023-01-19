@@ -6,10 +6,11 @@
 }
 
 .pocetna {
-  background-image: url("../slike/Login1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("../slike/Login5.jpg");
+}
+
+.edit {
+  background-image: url("../slike/Login4.jpg");
 }
 
 .text-left {

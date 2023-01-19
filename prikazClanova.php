@@ -22,13 +22,13 @@
 
     <div class="pre-sor-div">
         <div id="div-pretrazi">
-            <label>Pretraži:</label>
+            <label><b>Pretraži:</b></label>
             <input type="text" class="form-control" id="txtPretraga">
             <button class="btn btn-success mt-2" id="pretraziBtn">Pretraži</button>
         </div>
 
         <div id="div-sortiraj">
-            <label style="background-color: darkolivegreen;">Sortiraj:</label>
+            <label><b>Sortiraj:</b></label>
             <select class="form-select" id="selKolona">
                 <option>Izaberi</option>
                 <option value="ime">Ime</option>
@@ -85,12 +85,14 @@
                         <a href="editPrikazClana.php?clanId=<?php echo $sviClanovi[$i]->clanId ?>"><button class="btn btn-dark" id="izmeni-button" value="<?php echo $sviClanovi[$i]->clanId; ?>">Izmeni</button></a>
                     </td>
                 <tr>
-
                 <?php
             }
                 ?>
+
         </tbody>
-    </table>
+        
+    
+
 
 
 

@@ -24,32 +24,32 @@
 
         <div class="form-group mt-3">
             <label class="form-label"><b>Ime </b></label>
-            <input type="text" class="form-control" name="ime">
+            <input type="text" class="form-control" name="ime" id="ime">
         </div>
 
         <div class="form-group mt-3">
             <label class="form-label"><b>Prezime </b></label>
-            <input type="text" class="form-control" name="prezime">
+            <input type="text" class="form-control" name="prezime" id="prezime">
         </div>
 
         <div class="form-group mt-3">
             <label class="form-label"><b>Korisnicko ime </b></label>
-            <input type="text" class="form-control" name="username">
+            <input type="text" class="form-control" name="username" id="username">
         </div>
 
         <div class="form-group mt-3">
             <label class="form-label"><b>Lozinka </b></label>
-            <input type="password" class="form-control" name="password">
+            <input type="password" class="form-control" name="password" id="password">
         </div>
 
         <div class="form-group mt-3">
             <label class="form-label"><b>Email </b></label>
-            <input type="email" class="form-control" name="email">
+            <input type="email" class="form-control" name="email" id="email">
         </div>
 
         <div class="form-group mt-3 mb-3">
             <label class="form-label"><b>Tip </b></label>
-            <select class="form-select text-center" name="tip">
+            <select class="form-select text-center" name="tip" id="tip">
                 <?php
                 $tip = new Tip();
                 $sviTipovi = $tip->vratiSveTipove();
@@ -64,6 +64,8 @@
         </div>
         
         <button type="submit" id="dodajClanaBtn" name="dodajClanaBtn" class="btn btn-success">Sačuvaj</button>
+        <!-- <button type="button" onclick="submitData('insert')" class="btn btn-success">Insert</button> -->
+        
     </form>
 
     <?php

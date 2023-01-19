@@ -1,6 +1,7 @@
 $(function () {
   pretrazi();
   sortiraj();
+  SubmitData();
 });
 
 function pretrazi() {
@@ -34,6 +35,31 @@ function sortiraj() {
       success: function (result) {
         {
           $("#prikazBody").html(result);
+        }
+      },
+    });
+  });
+}
+
+function SubmitData() {
+  $(document).ready(function () {
+    var data = {
+      name: $("#ime").val(),
+      lastname: $("#prezime").val(),
+      username: $("#username").val(),
+      password: $("#password").val(),
+      email: $("#email").val(),
+      type: $("#tip").val(),
+    };
+
+    $.ajax({
+      url: "dodajClana.php",
+      method: "post",
+      data: { ime: data.ime },
+
+      success: function (result) {
+        {
+          $("#dodajClanaForma").html(result);
         }
       },
     });

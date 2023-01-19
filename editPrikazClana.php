@@ -10,7 +10,7 @@
     <title>Izmena clana</title>
 </head>
 
-<body>
+<body class="edit">
 
     <?php
     include 'navbar.php';
